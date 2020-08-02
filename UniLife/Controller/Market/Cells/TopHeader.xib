@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TopHeader" id="iN0-l3-epB" customClass="TopHeader" customModule="UniLife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTD-Ti-s6C">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="195"/>
+                    <color key="backgroundColor" name="Secondary text background color"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIB-Dh-5S6">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="195"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-au-kZt">
+                    <rect key="frame" x="16" y="16" width="333" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HqB-9e-5tm"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Cafes"/>
+                        <segment title="Market"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="QJk-SX-kxg"/>
+                    </connections>
+                </segmentedControl>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search item" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-He-8Cu">
+                    <rect key="frame" x="8" y="54" width="305" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oAQ-oV-388"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcl-8Q-oyv">
+                    <rect key="frame" x="0.0" y="98" width="365" height="97"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22o-Ht-F7o">
+                    <rect key="frame" x="313" y="57" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="mHZ-6S-vtR"/>
+                        <constraint firstAttribute="height" constant="36" id="pt3-6Y-ude"/>
+                    </constraints>
+                    <color key="tintColor" name="Main color"/>
+                    <state key="normal" image="chevron.down" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="bold"/>
+                    </state>
+                    <connections>
+                        <action selector="optionsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="MqO-OO-yMG"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BKE-gQ-bDN">
+                    <rect key="frame" x="16" y="104" width="349" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="yTa-7O-QHk"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="8" id="l7r-IQ-4Uc">
+                        <size key="itemSize" width="50" height="30"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="K21-xI-GHJ">
+                    <rect key="frame" x="16" y="142" width="333" height="30"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-LX-2yq">
+                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="30"/>
+                            <color key="backgroundColor" name="Background color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="69.5" id="bsI-eD-KM1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Liked" image="heart.fill" catalog="system">
+                                <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="filterPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="u9q-aI-lSq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFR-K7-yc4">
+                            <rect key="frame" x="69.5" y="0.0" width="162" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="tintColor" name="Muted icon color"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Highest to lowest" image="arrow.up.arrow.down" catalog="system">
+                                <color key="titleColor" name="Muted icon color"/>
+                            </state>
+                            <connections>
+                                <action selector="sortPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aug-GR-bHC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ED-pU-WOS">
+                            <rect key="frame" x="231.5" y="0.0" width="101.5" height="30"/>
+                            <color key="backgroundColor" name="Background color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="101.5" id="2KQ-cY-eTr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="tintColor" name="Main color"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                            <state key="normal" title="New item" image="plus" catalog="system">
+                                <color key="titleColor" name="Main color"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="medium"/>
+                            </state>
+                            <connections>
+                                <action selector="categoriesPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="dTR-cR-BqA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wDx-c0-cm6"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="tTD-Ti-s6C" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4Kh-8P-ooj"/>
+                <constraint firstItem="wwI-He-8Cu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="53F-Rs-Ocq"/>
+                <constraint firstItem="wwI-He-8Cu" firstAttribute="top" secondItem="cDe-au-kZt" secondAttribute="bottom" constant="8" id="64Y-uA-OlE"/>
+                <constraint firstItem="XIB-Dh-5S6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7yg-Xm-l5r"/>
+                <constraint firstItem="cDe-au-kZt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9aP-Y3-fxb"/>
+                <constraint firstItem="zcl-8Q-oyv" firstAttribute="top" secondItem="wwI-He-8Cu" secondAttribute="bottom" id="A3O-1g-706"/>
+                <constraint firstItem="zcl-8Q-oyv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BeB-qA-fxf"/>
+                <constraint firstItem="XIB-Dh-5S6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C5g-SN-kLF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XIB-Dh-5S6" secondAttribute="bottom" id="E2V-vJ-zBN"/>
+                <constraint firstItem="zcl-8Q-oyv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Gc8-GB-8L1"/>
+                <constraint firstItem="XIB-Dh-5S6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HqB-1q-PrJ"/>
+                <constraint firstItem="tTD-Ti-s6C" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="J56-j5-dg1"/>
+                <constraint firstItem="K21-xI-GHJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="K8w-QI-SSS"/>
+                <constraint firstItem="zcl-8Q-oyv" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Kcp-4u-4ip"/>
+                <constraint firstItem="tTD-Ti-s6C" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NtA-cN-qWb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BKE-gQ-bDN" secondAttribute="trailing" id="QXb-O0-jGq"/>
+                <constraint firstItem="K21-xI-GHJ" firstAttribute="top" secondItem="BKE-gQ-bDN" secondAttribute="bottom" constant="8" id="RcE-r2-Sm3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cDe-au-kZt" secondAttribute="trailing" constant="16" id="WuA-fd-hVq"/>
+                <constraint firstItem="22o-Ht-F7o" firstAttribute="top" secondItem="cDe-au-kZt" secondAttribute="bottom" constant="11" id="a8r-SJ-5Kf"/>
+                <constraint firstItem="cDe-au-kZt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="bfr-AO-2WC"/>
+                <constraint firstItem="tTD-Ti-s6C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fOa-15-1bu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K21-xI-GHJ" secondAttribute="trailing" constant="16" id="hen-9x-2hb"/>
+                <constraint firstItem="BKE-gQ-bDN" firstAttribute="top" secondItem="wwI-He-8Cu" secondAttribute="bottom" constant="6" id="l5L-cJ-Imb"/>
+                <constraint firstItem="22o-Ht-F7o" firstAttribute="leading" secondItem="wwI-He-8Cu" secondAttribute="trailing" id="qVT-ev-X8x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="22o-Ht-F7o" secondAttribute="trailing" constant="16" id="wxT-kX-EaH"/>
+                <constraint firstItem="BKE-gQ-bDN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xDp-j8-e8c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backView" destination="XIB-Dh-5S6" id="j9c-Yx-oY7"/>
+                <outlet property="categoriesButton" destination="9ED-pU-WOS" id="A4e-jJ-jc6"/>
+                <outlet property="collectionView" destination="BKE-gQ-bDN" id="bQa-Fw-I3g"/>
+                <outlet property="filterButton" destination="AZC-LX-2yq" id="K8Y-yE-7TV"/>
+                <outlet property="optionsButton" destination="22o-Ht-F7o" id="Bdt-is-cC3"/>
+                <outlet property="optionsView" destination="zcl-8Q-oyv" id="HGu-PA-Mbf"/>
+                <outlet property="searchBar" destination="wwI-He-8Cu" id="2GQ-Z6-KSb"/>
+                <outlet property="secondaryView" destination="tTD-Ti-s6C" id="ExY-Wo-bkP"/>
+                <outlet property="segmentedControl" destination="cDe-au-kZt" id="kcQ-Pt-4Nd"/>
+                <outlet property="sortButton" destination="yFR-K7-yc4" id="AbZ-Kt-sQI"/>
+                <outlet property="stackView" destination="K21-xI-GHJ" id="5LY-gJ-ljB"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="108.14732142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="64" height="48"/>
+        <image name="chevron.down" catalog="system" width="64" height="36"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <namedColor name="Background color">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main color">
+            <color red="0.17299999296665192" green="0.46299999952316284" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Muted icon color">
+            <color red="0.53299999237060547" green="0.55299997329711914" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary text background color">
+            <color red="0.14499999582767487" green="0.14499999582767487" blue="0.14499999582767487" alpha="0.77999997138977051" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="topicHeader" id="iN0-l3-epB" customClass="TopicHeader" customModule="NULife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-2D-lBU">
+                    <rect key="frame" x="8" y="8" width="398" height="62"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vyg-mE-G6B">
+                            <rect key="frame" x="362" y="26.5" width="20" height="9"/>
+                            <color key="tintColor" name="Muted text color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LIz-sx-Ree"/>
+                                <constraint firstAttribute="width" constant="20" id="SAS-7C-mGJ"/>
+                            </constraints>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="regular"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-Mi-boZ">
+                            <rect key="frame" x="16" y="31" width="330" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="B1K-Pc-C4a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                            <color key="textColor" name="Muted text color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9b-di-9K1">
+                            <rect key="frame" x="16" y="9" width="330" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="wDl-3j-fke"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="z9b-di-9K1" firstAttribute="top" secondItem="ogQ-2D-lBU" secondAttribute="top" constant="9" id="DOK-Bx-KEa"/>
+                        <constraint firstItem="wHH-Mi-boZ" firstAttribute="top" secondItem="z9b-di-9K1" secondAttribute="bottom" id="E3i-AP-tLY"/>
+                        <constraint firstItem="wHH-Mi-boZ" firstAttribute="leading" secondItem="ogQ-2D-lBU" secondAttribute="leading" constant="16" id="GQV-wI-ur4"/>
+                        <constraint firstItem="vyg-mE-G6B" firstAttribute="leading" secondItem="z9b-di-9K1" secondAttribute="trailing" constant="16" id="INy-aD-QX1"/>
+                        <constraint firstAttribute="trailing" secondItem="vyg-mE-G6B" secondAttribute="trailing" constant="16" id="N8S-hd-V82"/>
+                        <constraint firstItem="vyg-mE-G6B" firstAttribute="centerY" secondItem="ogQ-2D-lBU" secondAttribute="centerY" id="VNz-18-40W"/>
+                        <constraint firstItem="z9b-di-9K1" firstAttribute="leading" secondItem="ogQ-2D-lBU" secondAttribute="leading" constant="16" id="szx-cR-qWd"/>
+                        <constraint firstItem="vyg-mE-G6B" firstAttribute="leading" secondItem="wHH-Mi-boZ" secondAttribute="trailing" constant="16" id="u3r-U7-MNL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="Background color"/>
+            <constraints>
+                <constraint firstItem="ogQ-2D-lBU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="0pv-sD-8cC"/>
+                <constraint firstItem="ogQ-2D-lBU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="4ta-kM-NBw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ogQ-2D-lBU" secondAttribute="bottom" id="NGY-7O-SQz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ogQ-2D-lBU" secondAttribute="trailing" constant="8" id="VQf-Sp-gTg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backView" destination="ogQ-2D-lBU" id="VKG-BS-yYn"/>
+                <outlet property="detailLabel" destination="wHH-Mi-boZ" id="NII-g5-a3P"/>
+                <outlet property="moreIcon" destination="vyg-mE-G6B" id="WWV-HN-lEy"/>
+                <outlet property="titleLabel" destination="z9b-di-9K1" id="7l7-C7-Rva"/>
+            </connections>
+            <point key="canvasLocation" x="-186" y="327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="64" height="36"/>
+        <namedColor name="Background color">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Muted text color">
+            <color red="0.23499999940395355" green="0.23499999940395355" blue="0.2630000114440918" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

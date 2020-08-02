@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>671591050205-souvjbgrqp73fosgr4k2v6iao87rfd4c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.671591050205-souvjbgrqp73fosgr4k2v6iao87rfd4c</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>671591050205-dp45f8h188p0lv8dqfm15l3qr0pdgpgg.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA3l03op4lAmV_xXsY0-27b9Aggcrj_SkQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>671591050205</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kuna-anarbay.UniLife</string>
+	<key>PROJECT_ID</key>
+	<string>gostudy-504cf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gostudy-504cf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:671591050205:ios:aa63bc39360f39beb72434</string>
+	<key>DATABASE_URL</key>
+	<string>https://gostudy-504cf.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseHeaderCell" rowHeight="106" id="KGk-i7-Jjw" customClass="CourseHeaderTableViewCell" customModule="NULife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjo-Md-Yu7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSo-JB-Z7i">
+                                <rect key="frame" x="16" y="16" width="64.5" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="QL0-3n-4fh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-tk-6Bo">
+                                <rect key="frame" x="16" y="43" width="288" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Wgw-RB-d6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JnA-tk-6Bo" firstAttribute="top" secondItem="zSo-JB-Z7i" secondAttribute="bottom" id="30a-uU-e3F"/>
+                            <constraint firstItem="JnA-tk-6Bo" firstAttribute="leading" secondItem="Sjo-Md-Yu7" secondAttribute="leading" constant="16" id="4C8-ws-gTB"/>
+                            <constraint firstItem="zSo-JB-Z7i" firstAttribute="top" secondItem="Sjo-Md-Yu7" secondAttribute="top" constant="16" id="GIe-Rz-OtK"/>
+                            <constraint firstAttribute="trailing" secondItem="JnA-tk-6Bo" secondAttribute="trailing" constant="16" id="GJT-rg-IJa"/>
+                            <constraint firstItem="zSo-JB-Z7i" firstAttribute="leading" secondItem="Sjo-Md-Yu7" secondAttribute="leading" constant="16" id="iXv-5y-jJc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Sjo-Md-Yu7" secondAttribute="bottom" id="Bxn-Tg-FWj"/>
+                    <constraint firstItem="Sjo-Md-Yu7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TYS-5P-VkL"/>
+                    <constraint firstItem="Sjo-Md-Yu7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="duq-NA-xyR"/>
+                    <constraint firstAttribute="trailing" secondItem="Sjo-Md-Yu7" secondAttribute="trailing" id="h2y-dk-ElT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detail" destination="JnA-tk-6Bo" id="iNQ-hw-4WC"/>
+                <outlet property="title" destination="zSo-JB-Z7i" id="yv4-Zw-5qP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="155.02232142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
